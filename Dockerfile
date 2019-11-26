@@ -9,5 +9,4 @@ RUN apt-get update \
 
 ADD /backup-volumes_entrypoint.sh /
 RUN chmod +x /backup-volumes_entrypoint.sh
-CMD ["sh", "-c", "/bin/cat"]
-# ENTRYPOINT ["/backup-volumes_entrypoint.sh"]
+ENTRYPOINT ["/backup-volumes_entrypoint.sh"]
